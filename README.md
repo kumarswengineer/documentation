@@ -68,7 +68,7 @@
        
     -> In this we will make a call to DB by using `BF_OutGoingFaxSettingInfo.Get_FaxOutGoingService_Practice_List` 
        and gets all the practices configured and having FAX_SENT_NEED_TO_UPDATE_STATUS Faxes to run 
-        this service on the current DBServer.
+       this service on the current DBServer.
        
        DB USed: `EMR_MasterDB`, SP's used: `usp_Fax_Outoing_Current_Sent_Details_List`
     
