@@ -23,8 +23,9 @@
     
     -> the SP will return the list of PracticeID, PK_Job (all FAX job ids delimited by , coming from SP) which are PENDING  to send fax.
 
-    -> Now loop on resulting list of PENDING practices list and create children exe's/processes for `EMR_Fax_OutGoing_Service` using 
-       `Start_OutGoingFax_Using_MetroFax_Process()` based on the existing running tasks count on CPU must be less than 10 with `GetExistingProcessCount()`.
+    -> Now Loop on resulting list of PENDING practices list and create children exe's/processes for `EMR_Fax_OutGoing_Service` 
+       using `Start_OutGoingFax_Using_MetroFax_Process()` based on the existing running tasks count on CPU 
+       must be less than 10 with `GetExistingProcessCount()`.
 
 
 ## EMR_Fax_OutGoing_UpdateStatus_Service_ExeGenerator
