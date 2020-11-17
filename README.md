@@ -54,8 +54,7 @@
         PracticeID & "^#" & PK_Jobs & "^#"
 
 
-
-
+![EMR_Fax_OutGoingService_ExeGenerator](https://github.com/kumarswengineer/documentation/blob/main/images/fax_generator.png?raw=true)
 
 ## EMR_Fax_OutGoing_UpdateStatus_Service_ExeGenerator (Windows Forms Type Project)
 
