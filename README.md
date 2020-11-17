@@ -1,5 +1,27 @@
 # EMR OUT GOING FAX SERVICE
 
+## TECHNICAL STACK USED
+    - Language : Vb.net
+    - Framework : .Net 4.6.1
+    - Framework Dependent
+    - SqlHelper for Data Base Access
+    - WinForms, Class Library Project Types
+    - SQL Server 2016
+
+    Depends On:
+        Internal:
+            - EMR_Application_Common
+            - EMR_Web_Models      
+            - http://www.myxpertemr.com/EMR_ErrRptMsg/SendMessage.asmx
+        External:
+            - epmergepdf
+            - HtmlAgilityPack
+            - Mail
+            - itextsharp
+            - PdfSharp
+            - Vintasoft.Imaging
+            - O2S.Components.PDF4NET
+
 ## THIS SOLTION CONSISTS OF 5 SUB PROJECTS 
     - EMR_Fax_OutGoingService_ExeGenerator
     - EMR_Fax_OutGoing_Service
@@ -32,7 +54,10 @@
         PracticeID & "^#" & PK_Jobs & "^#"
 
 
-## EMR_Fax_OutGoing_UpdateStatus_Service_ExeGenerator
+
+
+
+## EMR_Fax_OutGoing_UpdateStatus_Service_ExeGenerator (Windows Forms Type Project)
 
     -> This is a main exe which is deployed on a SERVICES Server and scheduled under 
        a windows task scheduler as a job to run for every 5/10(confirm with n/w team once) mins to start the service.
@@ -54,6 +79,9 @@
        based on the existing running tasks count on CPU must be less than 10 with `GetExistingProcessCount()`.
     
     -> `Start_OutGoingFax_Using_MetroFax_Process` this method will create a children exe by passing command line args PracticeID
+
+
+
         
 
 
