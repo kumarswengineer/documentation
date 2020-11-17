@@ -12,7 +12,7 @@
     -> This is a main exe which is deployed on a SERVICES Server and scheduled under 
        a windows task scheduler as a job to run for every 5/10(confirm with n/w team once) mins to start the service.
 
-    -> On formLoad(frmFAX_OutGoingServiceStarter_Load) it will read the DBServers configured to run on this server from 
+    -> frmFAX_OutGoingServiceStarter.vb -> On formLoad(frmFAX_OutGoingServiceStarter_Load) it will read the DBServers configured to run on this server from 
        App.config(key: DBServerInfo - add server names with ; delimiter) and will loop on each DBServer and makes 
        a call to this method `Run_EMR_FaxOutgoingService_For_AllPractices`.
        
